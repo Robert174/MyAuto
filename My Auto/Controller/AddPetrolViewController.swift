@@ -189,5 +189,6 @@ class AddPetrolViewController: UIViewController, UITableViewDelegate, UITableVie
         mileageTextField.text = ""
         litersTextField.text = ""
         pricePerLiterTextField.text = ""
+        totalLabel.text = "0"
     }
 }
