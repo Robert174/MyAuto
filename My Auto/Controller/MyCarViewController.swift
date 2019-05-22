@@ -34,7 +34,11 @@ class MyCarViewController: UIViewController {
     
     var arrayOfCars : [String] = []
    
+    let messageFrame = UIView()
+    var activityIndicator = UIActivityIndicatorView()
+    var strLabel = UILabel()
     
+    let effectView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,6 +84,30 @@ class MyCarViewController: UIViewController {
         }
     }
     
+    func activityIndicator(_ title: String) {
+        
+        strLabel.removeFromSuperview()
+        activityIndicator.removeFromSuperview()
+        effectView.removeFromSuperview()
+        
+        strLabel = UILabel(frame: CGRect(x: 50, y: 0, width: 300, height: 46))
+        strLabel.text = title
+        strLabel.font = .systemFont(ofSize: 14, weight: .medium)
+        strLabel.textColor = UIColor(white: 0.9, alpha: 0.7)
+        
+        effectView.frame = CGRect(x: view.frame.midX - strLabel.frame.width/2, y: view.frame.midY - strLabel.frame.height/2 , width: 300, height: 46)
+        effectView.layer.cornerRadius = 15
+        effectView.layer.masksToBounds = true
+        
+        activityIndicator = UIActivityIndicatorView(style: .white)
+        activityIndicator.frame = CGRect(x: 0, y: 0, width: 46, height: 46)
+        activityIndicator.startAnimating()
+        
+        effectView.contentView.addSubview(activityIndicator)
+        effectView.contentView.addSubview(strLabel)
+        view.addSubview(effectView)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToAddCarScreen" {
             let secondVC = segue.destination as! AddCarViewController
@@ -104,22 +132,27 @@ class MyCarViewController: UIViewController {
     }
     
     func getCarMakes() {
-        let url = "https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=json"
-        Alamofire.request(url,method: .get).responseJSON {
-            response in
-            if response.result.isSuccess{
-                let carsJSON : JSON = JSON(response.result.value!)
-                for i in 0...75{
-                    self.arrayOfCars.append(carsJSON["Results"][i]["Make_Name"].string ?? "")
+        if (arrayOfCars.count == 0){
+            activityIndicator("Подождите, обновляются данные")
+            self.addButton.isEnabled = false
+            let url = "https://vpic.nhtsa.dot.gov/api/vehicles/getallmakes?format=json"
+            Alamofire.request(url,method: .get).responseJSON {
+                response in
+                if response.result.isSuccess{
+                    let carsJSON : JSON = JSON(response.result.value!)
+                    for i in 0...75{
+                        self.arrayOfCars.append(carsJSON["Results"][i]["Make_Name"].string ?? "")
+                    }
+                    print("end")
+                    self.effectView.removeFromSuperview()
+                    self.addButton.isEnabled = true
                 }
-                print("end")
-            }
-            else{
-                print("Ошибка запроса")
+                else{
+                    print("Ошибка запроса")
+                }
             }
         }
     }
-    
     
     func showTotalExpenses() {
         petrolChartDataEntry.value = 0

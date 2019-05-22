@@ -45,10 +45,12 @@ class AddPetrolViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         self.opacityView.isHidden = true
-        // Do any additional setup after loading the view.
+        
         litersTextField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControl.Event.editingChanged)
         pricePerLiterTextField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControl.Event.editingChanged)
+        
         showTotalExpensesAndMileAge()
+        
         petrolTableView.delegate = self
         petrolTableView.dataSource = self
         petrolTableView.register(UINib(nibName: "PetrolTableViewCell", bundle: nil), forCellReuseIdentifier: "petrolCell")

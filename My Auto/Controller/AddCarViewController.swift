@@ -23,16 +23,13 @@ class AddCarViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     let thePicker = UIPickerView()
     var arrayOfCars : [String] = []
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        markTextField.text = "Aston Martin"
         markTextField.inputView = thePicker
         thePicker.delegate = self
     }
-    
-    
     
     @IBAction func addButtonPressed(_ sender: Any) {
         if ((markTextField.text != "") && (modelTextField.text != "") && (yearTextField.text != "") && (numberTextField.text != "")){
@@ -85,8 +82,6 @@ class AddCarViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         }
     }
     
-    
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -102,15 +97,5 @@ class AddCarViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         markTextField.text = arrayOfCars[row]
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -75,7 +75,6 @@ class ChangeCarDataViewController: UIViewController {
                 print(error)
             }
             print(Realm.Configuration.defaultConfiguration.fileURL)
-            
             self.navigationController?.popViewController(animated: true)
         }
         else {

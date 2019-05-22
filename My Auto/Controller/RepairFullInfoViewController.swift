@@ -36,8 +36,6 @@ class RepairFullInfoViewController: UIViewController, UINavigationControllerDele
        
     }
     
-
-    
     func fillLabels() {
         let Array = realm.objects(Repair.self)
         dateLabel.text = Array.reversed()[chosenCellIndex].date

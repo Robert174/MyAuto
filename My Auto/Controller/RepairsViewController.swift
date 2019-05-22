@@ -29,8 +29,8 @@ class RepairsViewController: UIViewController, UITableViewDelegate, UITableViewD
         didSet{
             self.totalLabelView.backgroundColor = #colorLiteral(red: 0.262098521, green: 0.539827168, blue: 0.6507278681, alpha: 1)
         }
-        
     }
+    
     @IBOutlet weak var totalExpensesLabel: UILabel!
     @IBOutlet weak var repairTableView: UITableView!
     @IBOutlet weak var priceTextField: UITextField!
@@ -43,7 +43,6 @@ class RepairsViewController: UIViewController, UITableViewDelegate, UITableViewD
     var numberOfCells: Int = 0
     let realm = try! Realm()
     var indexOfChosenCell: Int = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
