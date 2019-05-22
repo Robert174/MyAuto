@@ -45,6 +45,7 @@ class MyCarViewController: UIViewController {
         let myCar = realm.objects(Car.self)
         checkCar(myCar: myCar)
         showTotalExpenses()
+        updateChartData()
     }
     
     override func viewDidLoad() {
