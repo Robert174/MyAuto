@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (4.8.2)
+  - ASPCircleChart (3.0.0)
+  - Charts (3.3.0):
+    - Charts/Core (= 3.3.0)
+  - Charts/Core (3.3.0)
+  - IQKeyboardManager (6.2.1)
+  - Realm (3.14.2):
+    - Realm/Headers (= 3.14.2)
+  - Realm/Headers (3.14.2)
+  - RealmSwift (3.14.2):
+    - Realm (= 3.14.2)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ASPCircleChart
+  - Charts
+  - IQKeyboardManager
+  - RealmSwift
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ASPCircleChart
+    - Charts
+    - IQKeyboardManager
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ASPCircleChart: c1437eb07adffcf66aa04a666e3849e6fc5f3f71
+  Charts: ec1f57f9340054155691e84d4544a1d239d382c5
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  Realm: 179c6706e3a49dbfe112e572fd3c03d3169bea35
+  RealmSwift: 1797f272fb51c555b764fada32e82159a2c65247
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: c292c4d38fc97121a75c1b8bb5153b2c6da0d36a
+
+COCOAPODS: 1.7.0.beta.3

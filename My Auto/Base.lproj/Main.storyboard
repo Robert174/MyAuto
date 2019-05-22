@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QcH-yF-cKB">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="y5C-Bm-dwx">
+            <objects>
+                <tabBarController id="QcH-yF-cKB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="E9O-XS-gFJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HE6-wZ-nMY" kind="relationship" relationship="viewControllers" id="hhS-rY-N0R"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="y21-SO-rJ3"/>
+                        <segue destination="Rgi-in-IKR" kind="relationship" relationship="viewControllers" id="A7R-K7-iQ5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeI-FP-Joa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1188" y="106"/>
+        </scene>
+        <!--Топливо-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Auto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.78823529411764703" green="0.67843137254901964" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Топливо" id="BJD-iE-i82"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="106"/>
+        </scene>
+        <!--Ваши авто-->
+        <scene sceneID="KSQ-U5-PgG">
+            <objects>
+                <viewController id="Hir-Ph-caa" customClass="MyAutosViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6nr-OY-3vs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Мои авто" id="w9a-uH-O2b"/>
+                    <navigationItem key="navigationItem" title="Ваши авто" id="aWw-Eb-uWD">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="eLG-lX-fE2">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1gK-aN-2tU">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Добавить"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="e9N-s5-SUu" kind="show" identifier="GoToAddCar" id="r6H-sq-7hX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0F-oO-6uR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="-604"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RYv-Jr-eaB">
+            <objects>
+                <viewController id="e9N-s5-SUu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v7H-fU-UWY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="n7X-B1-LtH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zC-ML-10P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="-604"/>
+        </scene>
+        <!--Мои авто-->
+        <scene sceneID="wHU-o4-3Ms">
+            <objects>
+                <navigationController id="HE6-wZ-nMY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Мои авто" id="cx1-wP-Odf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eVH-wm-PC7">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Hir-Ph-caa" kind="relationship" relationship="rootViewController" id="mtb-0C-Qp8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlU-Kq-THh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="-604"/>
+        </scene>
+        <!--ТО-->
+        <scene sceneID="eVM-tR-4yL">
+            <objects>
+                <viewController id="Rgi-in-IKR" customClass="ViewController" customModule="My_Auto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x6e-M5-7Tr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.67843137249999996" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="mho-ra-agD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ТО" id="Vjz-qm-P3r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zxv-TR-vxG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="850"/>
+        </scene>
+    </scenes>
+</document>

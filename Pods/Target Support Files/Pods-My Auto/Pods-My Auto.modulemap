@@ -1,0 +1,6 @@
+framework module Pods_My_Auto {
+  umbrella header "Pods-My Auto-umbrella.h"
+
+  export *
+  module * { export * }
+}

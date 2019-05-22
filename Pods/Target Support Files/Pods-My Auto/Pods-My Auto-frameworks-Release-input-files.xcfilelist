@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-My Auto/Pods-My Auto-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ASPCircleChart/ASPCircleChart.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

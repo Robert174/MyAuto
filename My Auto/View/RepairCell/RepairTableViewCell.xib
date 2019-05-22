@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="repairCell" rowHeight="62" id="KGk-i7-Jjw" customClass="RepairTableViewCell" customModule="My_Auto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT7-v3-l1y">
+                        <rect key="frame" x="10" y="10" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN5-3i-u5P">
+                        <rect key="frame" x="274" y="10" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmW-bC-05X">
+                        <rect key="frame" x="277" y="35.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <color key="highlightedColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сервис:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYk-n5-v4F">
+                        <rect key="frame" x="10" y="34.5" width="55" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплачено:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1v-RA-gOL">
+                        <rect key="frame" x="195" y="10" width="71" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK4-xd-ssw">
+                        <rect key="frame" x="73" y="34.5" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="MYk-n5-v4F" secondAttribute="bottom" constant="10" id="Bkm-p2-R0f"/>
+                    <constraint firstItem="AK4-xd-ssw" firstAttribute="leading" secondItem="MYk-n5-v4F" secondAttribute="trailing" constant="8" id="BuZ-42-9zM"/>
+                    <constraint firstItem="fT7-v3-l1y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GbQ-x1-zab"/>
+                    <constraint firstAttribute="trailing" secondItem="iN5-3i-u5P" secondAttribute="trailing" constant="10" id="Nka-m3-0cd"/>
+                    <constraint firstAttribute="bottom" secondItem="UmW-bC-05X" secondAttribute="bottom" constant="10" id="Ux8-RY-6yB"/>
+                    <constraint firstItem="z1v-RA-gOL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="a9g-CS-gB2"/>
+                    <constraint firstItem="fT7-v3-l1y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="air-qv-86Y"/>
+                    <constraint firstItem="iN5-3i-u5P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="aol-iw-7wk"/>
+                    <constraint firstItem="MYk-n5-v4F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="b1x-Dx-2fO"/>
+                    <constraint firstAttribute="bottom" secondItem="AK4-xd-ssw" secondAttribute="bottom" constant="10" id="gKS-i8-Kgq"/>
+                    <constraint firstAttribute="trailing" secondItem="UmW-bC-05X" secondAttribute="trailing" constant="10" id="mBe-Qe-bOl"/>
+                    <constraint firstItem="iN5-3i-u5P" firstAttribute="leading" secondItem="z1v-RA-gOL" secondAttribute="trailing" constant="8" id="vhT-iF-bHD"/>
+                    <constraint firstItem="MYk-n5-v4F" firstAttribute="top" secondItem="fT7-v3-l1y" secondAttribute="bottom" constant="7.5" id="w5v-jk-Sbh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLabel" destination="UmW-bC-05X" id="dBA-Vr-iZk"/>
+                <outlet property="paidLabel" destination="iN5-3i-u5P" id="VSr-oh-tzF"/>
+                <outlet property="serviceLabel" destination="AK4-xd-ssw" id="kaG-bm-b1e"/>
+                <outlet property="typeLabel" destination="fT7-v3-l1y" id="1qc-iL-dpA"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
