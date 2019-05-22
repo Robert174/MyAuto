@@ -353,7 +353,7 @@
                         <viewLayoutGuide key="safeArea" id="q13-05-wlk"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ваш автомобиль" id="aIb-Ow-lUp">
-                        <barButtonItem key="rightBarButtonItem" title="lДобавить" id="IK4-QI-h9m">
+                        <barButtonItem key="rightBarButtonItem" title="Добавить" id="IK4-QI-h9m">
                             <connections>
                                 <action selector="addButtonPressed:" destination="gix-yH-6ZF" id="kHC-O0-Jsb"/>
                             </connections>
